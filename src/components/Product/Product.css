@@ -38,8 +38,16 @@ border: none;
 border-radius: 0px 0px 8px 8px;
 position: absolute;
 bottom: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.cart-button .btn-text{
+  margin-right: 5px;
+
+
 }
 
 .cart-button:hover{
-background-color: rgb(118, 98, 234);
+background-image: linear-gradient(gray, white);
 }
