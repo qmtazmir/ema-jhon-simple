@@ -1,5 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import UseProducts from "../../Hooks/UseProducts";
+import { Link } from "react-router-dom";
 import { addToDb, getStoreCart } from "../../utilities/fakedb";
 import Cart from "../Cart/Cart";
 import PopupModal from "../Modal/Modal";
@@ -73,7 +75,14 @@ const Shop = () => {
           ))}
         </div>
         <div className="cart-container">
-          <Cart cart={cart}></Cart>
+          <Cart cart={cart}>
+            <Link to="/orders">
+              <button>
+                Review Order
+                <FontAwesomeIcon></FontAwesomeIcon>
+              </button>
+            </Link>
+          </Cart>
         </div>
       </div>
     </>
