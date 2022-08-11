@@ -44,6 +44,9 @@
     cursor: pointer;
 
 }
+.form-submit:hover{
+    color: rgba(255, 153, 0, 0.7);
+}
 
 .form-link{
     color: #ff9900;
